@@ -1,4 +1,4 @@
-# hsi-semG-imu-feature-study
+# hsi-semg-imu-feature-selection
 
 Feature characterization and selection of fused sEMG and IMU signals for studying prior hamstring strain injury during dynamic movement.
 
@@ -228,6 +228,7 @@ What was done:
 Outputs:
 
 - `results/xsens_imu/pre_pilot/figures/final_pre_pilot_figures/`
+- `results/xsens_imu/pre_pilot/manifests/squat_knee_summary_table.csv`
 
 ## 4. Preprocessing Method
 

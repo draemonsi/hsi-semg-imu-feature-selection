@@ -168,7 +168,7 @@ def plot_left_right_overlay(left: pd.DataFrame, right: pd.DataFrame, output_dir:
     return output_path
 
 
-def make_summary_table(summary: pd.DataFrame, output_dir: Path) -> Path:
+def make_summary_table(summary: pd.DataFrame) -> Path:
     squat = summary[summary["activity"] == "SQUAT"].copy()
     table = squat[
         [
@@ -184,7 +184,7 @@ def make_summary_table(summary: pd.DataFrame, output_dir: Path) -> Path:
     ].copy()
     table.insert(0, "angle_label", "IMU-derived relative knee flexion estimate")
     table["axis_note"] = "Flexion axis is data-derived and not anatomically calibrated."
-    output_path = output_dir / "squat_knee_summary_table.csv"
+    output_path = RESULTS_ROOT / "manifests" / "squat_knee_summary_table.csv"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     table.to_csv(output_path, index=False)
     return output_path
@@ -224,7 +224,7 @@ def run(output_dir: Path) -> list[Path]:
         plot_knee_with_peaks(left, summary, "L", output_dir),
         plot_knee_with_peaks(right, summary, "R", output_dir),
         plot_left_right_overlay(left, right, output_dir),
-        make_summary_table(summary, output_dir),
+        make_summary_table(summary),
     ]
     return outputs
 
@@ -238,7 +238,7 @@ def main() -> None:
     )
     args = parser.parse_args()
     outputs = run(args.output_dir)
-    print(f"Final figure/table outputs written under: {args.output_dir}")
+    print(f"Final pre-pilot outputs written for figure dir: {args.output_dir}")
     for output in outputs:
         print(f"- {output}")
 

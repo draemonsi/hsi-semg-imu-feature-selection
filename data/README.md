@@ -17,6 +17,8 @@ data/
 
 The current raw dataset is the Xsens DOT IMU pre-pilot dataset in `data/raw/xsens_imu/pre_pilot/`.
 
+Raw filenames preserve the original Xsens export names. Some filenames may therefore contain inconsistent separators, such as double underscores.
+
 Raw data should be treated as read-only. Analysis scripts should write derived files to `results/` or to `data/processed/` when a processed dataset is intentionally part of the project.
 
 The expected future sEMG dataset has not been added yet.
