@@ -1,0 +1,41 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Test/cache artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and local environment configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary analysis scratch files
+tmp/
+temp/
+scratch/
+*.tmp
+*.bak
+~$*
