@@ -1,0 +1,13 @@
+participant_id,activity,sensors_available,sensors_missing,first_sample_time_spread_us,start_time_count,overlapping_duration_seconds,can_time_align
+P01,standing,pelvis;shank_l;shank_r;thigh_l;thigh_r,,16667,5,10.550211,True
+P01,squat,pelvis;shank_l;shank_r;thigh_l;thigh_r,,0,5,10.266872,True
+P01,high_knee_hops,shank_l;shank_r;thigh_l;thigh_r,pelvis,0,4,11.50023,True
+P01,jogging,pelvis;shank_r;thigh_l;thigh_r,shank_l,33334,4,120.285739,True
+P02,standing,pelvis;shank_r;thigh_l,thigh_r;shank_l,16667,3,8.750175,True
+P02,squat,pelvis;shank_l;shank_r;thigh_l;thigh_r,,16667,5,11.283559,True
+P02,high_knee_hops,pelvis;shank_l;shank_r;thigh_l;thigh_r,,16667,5,9.750195,True
+P02,jogging,pelvis;shank_l;shank_r;thigh_l;thigh_r,,50001,5,119.635726,True
+P03,standing,shank_l;thigh_r,pelvis;thigh_l;shank_r,0,2,8.800176,True
+P03,squat,pelvis;thigh_r,thigh_l;shank_l;shank_r,16667,2,26.367194,True
+P03,high_knee_hops,pelvis,thigh_l;thigh_r;shank_l;shank_r,0,1,8.216831,True
+P03,jogging,,pelvis;thigh_l;thigh_r;shank_l;shank_r,,,,False

@@ -39,3 +39,6 @@ scratch/
 *.tmp
 *.bak
 ~$*
+
+# Private/local metadata not intended for public tracking
+private/
