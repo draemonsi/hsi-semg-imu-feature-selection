@@ -1,0 +1,12 @@
+sep=,
+DeviceTag:,DOT_Thigh_L
+FirmwareVersion:,2.2.1
+AppVersion:,2023.6.0
+SyncStatus:,Synced
+OutputRate:,60Hz
+FilterProfile:,Dynamic
+Measurement Mode:,Custom modes - custom mode5
+StartTime: ,2026-09-15_18:34:21_038 GMT+8
+© Movella Technologies B. V. 2005-2026
+
+PacketCounter,SampleTimeFine,Acc_X,Acc_Y,Acc_Z,Gyr_X,Gyr_Y,Gyr_Z,Quat_W,Quat_X,Quat_Y,Quat_Z
